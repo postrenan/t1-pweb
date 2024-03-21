@@ -17,57 +17,63 @@
             </div>
         </nav>
     </header>
-    <main>
-        <section class="container row">
-            <section class="col">
-                <form class="row card text-center">
+    <main class="container row">
+            <section class="col-6">
+                <form class="row text-center">
                     <label>
+                        <input type="text" id="tituloTrab" placeholder="Titulo do trabalho">
+                    </label>
+                    <label>
+                        <input type="text" id="nomeAluno" placeholder="Nome do aluno">
+                    </label>
+                    <label>
+                        <input type="text" id="nomeProfOr" placeholder="Nome do Professor Orientador">
+                    </label>
+                    <label>
+                        <input type="text" id="nomeProfAv1" placeholder="Nome do Professor(a) Avaliador(a) 1">
+                    </label>
+                    <label>
+                        <input type="text" id="nomeProfAv2" placeholder="Nome do Professor(a) Avaliador(a) 2">
+                    </label>
+                    <label>
+                        <input type="text" id="curso" placeholder="Curso">
+                    </label>
+                    <label>
+                        <input type="number" aria-valuemax="10" aria-valuemin="0" id="nota" placeholder="Nota Final">
+                    </label>
+                    <label>
+                        <input id="data-hora" type="datetime-local" >
+                    </label>
+                    <label>
+                        <input type="text" id="sala" placeholder="Sala">
+                    </label>
+                    <label>
+                        <input type="date" id="dataFim" placeholder="Data Final para entregar a cópia definitiva do Trabalho de Graduação">
+                    </label>
+                </form>
+            </section>
+            <section class="col-6">
+                <form class="row text-center">
+                    <label>
+                        <p>Assinatura do(a) Orientador(a)</p>
                         <canvas height="100" width="300" class="signature-pad"></canvas>
                     </label>
                     <label>
-                        <canvas width="200" height="100" style="border:1px solid #000000;"></canvas>
+                        <p>Assinatura do(a) Avaliador(a) 1</p>
+                        <canvas height="100" width="300" class="signature-pad"></canvas>
                     </label>
                     <label>
-                        <canvas width="200" height="100" style="border:1px solid #000000;"></canvas>
+                        <p>Assinatura do(a) Avaliador(a) 2</p>
+                        <canvas height="100" width="300" class="signature-pad"></canvas>
                     </label>
-                </form>
-            </section>
-            <section class="col">
-                <form class="row card text-center">
-                    <label>
-                        <input type="text" placeholder="Titulo do trabalho">
-                    </label>
-                    <label>
-                        <input type="text" placeholder="Nome do aluno">
-                    </label>
-                    <label>
-                        <input type="text" placeholder="Nome do Professor Orientador">
-                    </label>
-                    <label>
-                        <input type="text" placeholder="Nome do Professor(a) Avaliador(a) 1">
-                    </label>
-                    <label>
-                        <input type="text" placeholder="Nome do Professor(a) Avaliador(a) 2">
-                    </label>
-                    <label>
-                        <input type="text" placeholder="Curso">
-                    </label>
-                    <label>
-                        <input type="text" placeholder="Nota Final">
-                    </label>
-                    <label>
-                        <input type="datetime-local" >
-                    </label>
-                    <label>
-                        <input type="text" placeholder="Sala">
-                    </label>
-                    <label>
-                        <input type="date" placeholder="Data Final para entregar a cópia definitiva do Trabalho de Graduação">
-                    </label>
+                    <section class="btns">
+                        <button class=" btn btn-primary" onclick="function f(modifyPdf){}">Gerar PDF</button>
+                        <button class="btn btn-primary">Gerar Link de compartilhamento</button>
+                    </section>
 
                 </form>
+
             </section>
-        </section>
     </main>
     </body>
 </html>
