@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <title>Ata TCC</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
     <link href="style.css" rel="stylesheet"/>
-    <link href="page.js" >
+    <script src="page.js"></script>
 </head>
     <body>
     <header>
@@ -67,7 +68,7 @@
                         <canvas height="100" width="300" class="signature-pad"></canvas>
                     </label>
                     <section class="btns">
-                        <button class=" btn btn-primary" onclick="function f(modifyPdf){}">Gerar PDF</button>
+                        <button class=" btn btn-primary" type="button" onclick="gerarPDF()">Gerar PDF</button>
                         <button class="btn btn-primary">Gerar Link de compartilhamento</button>
                     </section>
 
